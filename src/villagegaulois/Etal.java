@@ -29,15 +29,10 @@ public class Etal {
 		etalOccupe = false;
 		StringBuilder chaine = new StringBuilder();
 		try {
-			chaine.append("Le vendeur " + vendeur.getNom() + " quitte son étal, ");
-		} catch (NullPointerException e) {
-			System.out.println("error : stand deja vide");
-			;
-		}
+			chaine.append("Le vendeur " + vendeur.getNom() + " quitte son étal, ");
 
 		int produitVendu = quantiteDebutMarche - quantite;
-
-		try {
+
 			if (produitVendu > 0) {
 				chaine.append("il a vendu " + produitVendu + " parmi " + produit + ".\n");
 
